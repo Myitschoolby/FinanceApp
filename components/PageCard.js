@@ -15,23 +15,27 @@ class PageCard {
         
                 </div>
             </header>
-        
+
             <main class="main">
                 <div class="container">
-        
-                    <div class="page_card_balance">
-                        <h3>Your balance</h3>
-                        <div class="balance">$24,2568.20</div>
-                        <button class="page_card_add_button">+</button>
-                    </div>
-        
-                    <div class="page_card_photo">
-                        <img src="/assets/images/card_photo.png" alt="#">
-                    </div>
-        
+
+                    
+
                 </div>
             </main>`
         );
+
+        const cardInfoJson = localStorage.getItem('cardInfo');
+        const self = this;
+
+        import((cardInfoJson && cardInfoJson.length > 0) ? './PageCardBalance.js' : './PageCardForm.js')
+        .then(function(module) {
+            const container = DOM.search(self.element, '.main .container');
+
+            if (!container) return;
+
+            DOM.append(container, module.default);
+        });
     }
 
     render() {

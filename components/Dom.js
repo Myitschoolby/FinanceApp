@@ -60,4 +60,12 @@ export default class DOM {
 
         return element.classList.contains(name);
     };
+
+    static on = function(element, eventName, func) {
+        if (!element || !eventName || !func) return;
+
+        element.addEventListener(eventName, function(event) {
+            func.apply(this, [event]);
+        });
+    };
 };

@@ -134,6 +134,38 @@ body {
     width: 100%;
 }
 
+.page_card_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page_card_form h3 {
+    margin-bottom: 40px;
+}
+
+.page_card_form input {
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.page_card_form button {
+    border: 0;
+    background-color: rgba(255, 255, 255, .6);
+    font-size: 16px;
+    font-weight: bold;
+    color: #3873DD;
+    padding: 15px 30px;
+}
+
+.page_card_form button:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
 .page_transaction {
     background-color: #fff;
     color: #000;
