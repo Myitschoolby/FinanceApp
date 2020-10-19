@@ -48,7 +48,8 @@ class PageCardForm {
 
         localStorage.setItem('cardInfo', cardInfoJson);
 
-        render();
+        // render();
+        location.reload();
     }
 
     render() {

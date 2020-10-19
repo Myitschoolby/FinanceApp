@@ -113,7 +113,7 @@ body {
     border-radius: 20px;
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
 
     width: 60px;
@@ -134,16 +134,19 @@ body {
     width: 100%;
 }
 
+.page_card_form_transaction,
 .page_card_form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+.page_card_form_transaction h3,
 .page_card_form h3 {
     margin-bottom: 40px;
 }
 
+.page_card_form_transaction input,
 .page_card_form input {
     width: 80%;
     border: 1px solid #ccc;
@@ -152,6 +155,7 @@ body {
     margin-bottom: 20px;
 }
 
+.page_card_form_transaction button,
 .page_card_form button {
     border: 0;
     background-color: rgba(255, 255, 255, .6);
@@ -161,9 +165,20 @@ body {
     padding: 15px 30px;
 }
 
+.page_card_form_transaction button:hover,
 .page_card_form button:hover {
     background-color: #fff;
     cursor: pointer;
+}
+
+.page_card_form_transaction {
+    margin-top: 40px;
+}
+
+.page_card .to_transactions {
+    display: inline-block;
+    margin-top: 40px;
+    color: #fff;
 }
 
 .page_transaction {
