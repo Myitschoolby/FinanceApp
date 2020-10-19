@@ -16,7 +16,7 @@ DOM.attr(linkGFonts, 'href', 'https://fonts.googleapis.com/css2?family=Poppins:i
 
 const linkStyle = DOM.create('link');
 DOM.attr(linkStyle, 'rel', 'stylesheet');
-DOM.attr(linkStyle, 'href', '/css/style.css');
+DOM.attr(linkStyle, 'href', 'css/style.css');
 
 DOM.append(document.head, metaCharset);
 DOM.append(document.head, metaViewport);
